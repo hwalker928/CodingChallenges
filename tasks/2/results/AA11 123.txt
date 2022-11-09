@@ -1,0 +1,5 @@
+Data from readings:
+
+License Plate: AA11 123
+Car speed: 74
+Road speed limit: 61
