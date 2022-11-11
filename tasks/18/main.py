@@ -10,7 +10,7 @@ for year in range(startYear, endYear):
     for char in str(year):
         count = str(year).count(char)
         if count > 1:
-            multiple = True      
+            multiple = True
     if multiple:
         years += 1
         multiple = False

@@ -10,8 +10,10 @@ if not logicGate in validLogicGates:
     print("Valid options:", ", ".join(validLogicGates))
     sys.exit()
 
+
 def base2ToBool(intValue: int):
     return [False, True][intValue]
+
 
 input1 = base2ToBool(int(input("Enter 0 or 1: ")))
 input2 = base2ToBool(int(input("Enter 0 or 1: ")))

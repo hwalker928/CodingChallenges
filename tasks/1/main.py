@@ -10,13 +10,12 @@ try:
 except:
     print("Number is not valid.")
 
-
-while not n == 0 :
+while not n == 0:
     n -= 1
     attempts += 1
     factor.append(attempts)
-                
+
 for number in factor:
     final = number * final
-            
+
 print(final)
