@@ -1,16 +1,14 @@
 # Task 15 - Pangrams
 
 import string
-
-letters = string.ascii_lowercase
+import re
 
 userInput = input("Enter a sentence: ")
 
 successful = True
-print("\n")
 
-for letter in letters:
-    if letter not in userInput.lower():
+for letter in string.ascii_lowercase:
+    if letter not in re.sub(r'[^a-z]', '', f"{userInput.lower()}\t"):
         print(f"The letter {letter} is not present.")
         successful = False
 
