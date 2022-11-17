@@ -36,13 +36,12 @@ numbers = [{
 }]
 
 for number in numbers:
-    for i in range(0, 1):
-        if number['plural']:
-            print(f"{number['number']} green bottles hanging on the wall")
-            if not number['number'] == "NO":
-                print("And if one green bottle should accidentally fall,")
-                print("There'll be...\n")
-        else:
-            print(f"{number['number']} green bottle hanging on the wall")
+    if number['plural']:
+        print(f"{number['number']} green bottles hanging on the wall")
+        if not number['number'] == "NO":
             print("And if one green bottle should accidentally fall,")
             print("There'll be...\n")
+    else:
+        print(f"{number['number']} green bottle hanging on the wall")
+        print("And if one green bottle should accidentally fall,")
+        print("There'll be...\n")
